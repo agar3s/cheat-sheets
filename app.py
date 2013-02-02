@@ -22,7 +22,7 @@ else:
 
 @app.route('/')
 def index():
-    return render_template('index.html', cheat_sheets=mongo.db.sheets.find())
+    return render_template('index.html', cheat_sheets=db.sheets.find())
 
 @app.route('/new', methods=['POST', 'GET'])
 def create_sheet():
@@ -39,7 +39,7 @@ def create_sheet():
         cheat_sheet['variables'] = variables
 
         print cheat_sheet
-        mongo.db.sheets.save(cheat_sheet)
+        db.sheets.save(cheat_sheet)
 
     return render_template('create.html')
 
