@@ -1,11 +1,22 @@
 from flask import Flask
 from flask.ext.pymongo import PyMongo
+from pymongo import Connection
 from flask import render_template, request
 
 app = Flask(__name__)
 
-app.MONGO_DBNAME = 'cheats'
-mongo = PyMongo(app)
+ 
+MONGO_URL = os.environ.get('MONGOHQ_URL')
+ 
+if MONGO_URL:
+# Get a connection
+    connection = Connection(MONGO_URL)
+# Get the database
+    db = connection[urlparse(MONGO_URL).path[1:]]
+else:
+# Not on an app with the MongoHQ add-on, do some localhost action
+    connection = Connection('localhost', 27017)
+    db = connection['MyDB']
 
 @app.route('/')
 def index():
@@ -35,4 +46,5 @@ def create_sheet():
 app.debug = True
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
