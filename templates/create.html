@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}Create your own Cheat Sheet{% endblock %}
+{% block content %}
+
+    <h2>Create a new Cheat Sheet</h2>
+    <div class="">
+	    <form id="cheat-sheet" class="form well" method=POST>
+        <fieldset>
+            <legend>Create all the variables as you want</legend>
+            <div class="control-group">
+                <label class="control-label" for="name">Cheat Sheet name</label>
+                <input id="name" name="name" class="input-xxlarge" type="text" placeholder="name this sheet">
+            </div>
+            <br>
+            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
+            <div id="variables">
+            </div>
+            <button id="add" class="btn btn-success" type="submit"><i class="icon-plus icon-white"></i>add</button>
+            <div class="form-actions">
+                <button class="btn btn-primary btn-large" type="submit">Save changes</button>
+                <a class="btn btn-large" type="reset" href="/">Cancel</a>
+            </div>
+        </fieldset>
+	    </form>
+	    <a href="/">back</a>
+	</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    (function(){
+        index = 0;
+        var removeVariable = function(indexSelected){
+            $("#group"+indexSelected).remove();
+        }
+        var addVariable = function(){
+            index++;
+            $("#variables").append('<div id="groupfield'+index+'" class="control-group">'+
+                    '<input id="key'+index+'" name="key'+index+'" class="input-large key" type="text" placeholder="key">'+
+                    '<input id="value'+index+'" name="value'+index+'" class="input-xxlarge value" type="text" placeholder="value">'+
+                    '<button id="field'+index+'" class="btn btn-danger btn-small" type="submit"><i class="icon-remove icon-white"></i></button>'+
+                '</div>');
+
+            $("#field"+index).on("click",function(){
+                removeVariable(this.id);
+                return false;
+            });
+
+            $("#key"+index).on("keypress", function(e){
+                if(e.which == 13) {
+                    $(this).next(".value").focus();
+                    return false;
+                }
+            });
+
+            $("#value"+index).on("keypress", function(e) {
+                var keyCode = e.keyCode || e.which;
+                if(keyCode == 13 || keyCode == 9) {
+                    e.preventDefault();
+                    addVariable();
+                    $("#key"+index).focus();
+                    return false;
+                }
+        });
+
+        }
+
+        $("#add").on("click",function(){
+            addVariable();
+            return false;
+        });
+        $("#name").on("keypress", function(e){
+                if(e.which == 13) {
+                    $("#key1").focus();
+                    return false;
+                }
+            });
+
+        addVariable();
+
+        $(document).bind('keyup keydown', function(e){
+            if(e.shiftKey){
+                if((e.keyCode || e.which) == 13){
+                    $("#cheat-sheet").submit();
+                }
+            }
+
+        });
+
+    })();
+</script>
+{% endblock %}

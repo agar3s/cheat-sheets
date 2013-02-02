@@ -5,3 +5,11 @@
        -o-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.btn {
+  margin-top: -10px;
+}
+
+.control-group > * {
+  margin-right: 5px;
+}

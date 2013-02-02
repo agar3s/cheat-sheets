@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    {% block head%}
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+      <hr>
+      <footer>
+
+        Made by <a target="_blank" href="http://agares.co">Giovanny Beltran</a>. follow me <a href="http://twitter.com/agar3s">@agar3s</a>.<br/>
+      </footer>
+    </div>
+    {% block extra_js %}
+    {% endblock %}
+  </body>
+</html>
