@@ -11,12 +11,9 @@ app = Flask(__name__)
 MONGO_URL = os.environ.get('MONGOHQ_URL')
  
 if MONGO_URL:
-# Get a connection
     connection = Connection(MONGO_URL)
-# Get the database
     db = connection[urlparse(MONGO_URL).path[1:]]
 else:
-# Not on an app with the MongoHQ add-on, do some localhost action
     connection = Connection('localhost', 27017)
     db = connection['MyDB']
 
@@ -31,7 +28,8 @@ def create_sheet():
     if request.method == 'POST':
         cheat_sheet_pre = request.form.to_dict()
         cheat_sheet = {}
-        cheat_sheet['name'] = cheat_sheet_pre['name'];
+        cheat_sheet['name'] = cheat_sheet_pre['name']
+        cheat_sheet['description'] = cheat_sheet_pre['description']
 
         index = 1
         variables = {}
@@ -40,8 +38,8 @@ def create_sheet():
             index += 1;
         cheat_sheet['variables'] = variables
 
-        print cheat_sheet
         db.sheets.save(cheat_sheet)
+        return redirect(url_for('view_sheet', name=cheat_sheet['name']))
 
     return render_template('create.html')
 
@@ -53,6 +51,32 @@ def view_sheet(name):
         return render_template('view.html', sheet = sheet)
     
     return redirect(url_for('index'))
+
+
+@app.route('/edit/<name>', methods=['POST', 'GET'])
+def edit_sheet(name):
+    sheet = db.sheets.find_one({'name':name})
+    if not sheet:
+        return redirect(url_for('index'))
+
+    if request.method == 'POST':
+        cheat_sheet_pre = request.form.to_dict()
+        cheat_sheet = {}
+        cheat_sheet['name'] = name
+        cheat_sheet['description'] = cheat_sheet_pre['description']
+
+        index = 1
+        variables = {}
+        while ('key%d' % index) in cheat_sheet_pre:
+            variables[cheat_sheet_pre['key%d' % index]] = cheat_sheet_pre['value%d' % index]
+            index += 1;
+        cheat_sheet['variables'] = variables
+
+        db.sheets.update({'name':name}, cheat_sheet)
+        return redirect(url_for('view_sheet', name=name))
+
+    return render_template('edit.html', sheet = sheet)
+    
 
 
 app.debug = True

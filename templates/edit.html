@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}Create your own Cheat Sheet{% endblock %}
+{% block content %}
+
+    <h2>Editing the {{ sheet.name }} Cheat Sheet</h2>
+    <div class="">
+	    <form id="cheat-sheet" class="form well" method=POST>
+        <fieldset>
+            <legend>Edit and add the variables for the {{ sheet.name }} Cheat Sheet</legend>
+            <div class="control-group">
+                <label class="control-label" for="name">Cheat Sheet name</label>
+                <input id="name" name="name" disabled
+                    class="input-xxlarge" type="text" 
+                    placeholder="name this sheet" value="{{ sheet.name }}">
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="description">Cheat Sheet description</label>
+                <textarea id="description" 
+                          name="description"
+                          class="input-xxlarge"
+                          placeholder="Description for this sheet"
+                >{{ sheet.description }}</textarea>
+            </div>
+            <br>
+            <p class="help-block">Add the variables as you want to record and store.</p>
+            <div id="variables">
+                {% for key, value in sheet.variables.items() %}
+                <div id="groupfield{{ loop.index }}" class="control-group">
+                    <input id="key{{ loop.index }}"
+                        name="key{{ loop.index }}"
+                        class="input-large key"
+                        type="text"
+                        placeholder="key"
+                        value="{{ key }}">
+                    <input id="value{{ loop.index }}"
+                        name="value{{ loop.index }}"
+                        class="input-xxlarge value"
+                        type="text"
+                        placeholder="value"
+                        value="{{ value }}">
+                    <button id="field{{ loop.index }}" class="btn btn-danger btn-small remove" type="submit">
+                        <i class="icon-remove icon-white"></i>
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+            <button id="add" class="btn btn-success" type="submit"><i class="icon-plus icon-white"></i>add</button>
+            <div class="form-actions">
+                <button class="btn btn-primary btn-large" type="submit">Save changes</button>
+                <a class="btn btn-large" type="reset" href="/">Cancel</a>
+            </div>
+        </fieldset>
+	    </form>
+	    <a href="{{ url_for('view_sheet', name=sheet.name) }}">Back</a>
+	</div>
+
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{{ url_for('static', filename='js/cheatSheets.js') }}"></script>
+{% endblock %}

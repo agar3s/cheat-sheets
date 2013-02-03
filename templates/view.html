@@ -2,24 +2,27 @@
 
 {% block content %}
 
-    <h3>{{ sheet.name }}</h3>
-    <table class="table table-bordered table-striped table-hover">
-    <thead>
-        <tr>
-            <th>key</th>
-            <th>value</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for key, value in sheet.variables.items() %}
-        <tr>
-            <td>{{ key }}</td>
-            <td>{{ value }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-    </table>
-
-    <a href="/">back</a>
+    <h2>{{ sheet.name }}</h2>
+    <div class="">
+        <p>{{ sheet.description }}</p>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>key</th>
+                    <th>value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for key, value in sheet.variables.items() %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('edit_sheet', name=sheet.name) }}">Edit</a>
+        <a href="/">Back</a>
+    </div>
 
 {% endblock %}
