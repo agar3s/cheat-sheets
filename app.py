@@ -3,7 +3,7 @@ from urlparse import urlparse
 from flask import Flask
 from flask.ext.pymongo import PyMongo
 from pymongo import Connection
-from flask import render_template, request
+from flask import render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -49,7 +49,11 @@ def create_sheet():
 @app.route('/view/<name>')
 def view_sheet(name):
     sheet = db.sheets.find_one({'name':name})
-    return render_template('view.html', sheet = sheet)
+    if sheet:
+        return render_template('view.html', sheet = sheet)
+    
+    return redirect(url_for('index'))
+
 
 app.debug = True
 
