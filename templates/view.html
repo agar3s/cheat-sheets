@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
 
+{% block title %}{{ sheet.name }} Cheat Sheet{% endblock %}
+{% block description %}{{ sheet.description }}{% endblock %}
+{% block head %}
+    <meta property='og:title' content='{{ sheet.name }} Cheat Sheet'/>
+    <meta property='og:description' content='{{ sheet.description }}'/>
+{% endblock %}
 {% block content %}
 
     <h2>{{ sheet.name }}</h2>

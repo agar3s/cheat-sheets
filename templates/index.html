@@ -1,5 +1,12 @@
 {% extends "layout.html" %}
 
+{% block title %}Create your own Cheat Sheet{% endblock %}
+{% block description %}if you want to have your custome cheat sheets{% endblock %}
+{% block head %}
+    <meta property='og:title' content='Create your own Cheat Sheet'/>
+    <meta property='og:description' content="The easier way to create, store and share your things. Don't worry for that things"/>
+{% endblock %}
+
 {% block content %}
 
     <header class="jumbotron subhead">
@@ -19,6 +26,7 @@
 
         <hr>
         <h3><a href="{{ url_for('view_sheet', name=sheet.name ) }}">{{ sheet.name }}</a></h3>
+        <p>{{ sheet.description }}</p>
         <table class="table table-bordered table-striped table-hover">
         <thead>
             <tr>
@@ -35,7 +43,6 @@
             {% endfor %}
         </tbody>
         </table>
-        <p>{{ sheet.description }}</p>
     {% endfor %}
 
 {% endblock %}
