@@ -1,0 +1,1670 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sign",
+				"signup-link"
+			],
+			[
+				"cheat",
+				"cheat_sheet"
+			],
+			[
+				"che",
+				"cheat_sheet"
+			],
+			[
+				"inde",
+				"indexSelected"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"spa",
+				"letter-spacing"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"sp",
+				"sponsors"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bogota",
+				"BogotaConf"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"hea",
+				"head-nav"
+			],
+			[
+				"hear",
+				"header-h1-width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"loa",
+				"loadRatingStars"
+			],
+			[
+				"new",
+				"new-reputation"
+			],
+			[
+				"star",
+				"star-rate"
+			],
+			[
+				"y",
+				"y_axe"
+			],
+			[
+				"border-ra",
+				"border-bottom-right-radius"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"nava",
+				"nav-tabs"
+			],
+			[
+				"contes",
+				"contestants"
+			],
+			[
+				"USer",
+				"UserSkillLog"
+			],
+			[
+				"user",
+				"user_profile"
+			],
+			[
+				"userpro",
+				"user_profile"
+			],
+			[
+				"list",
+				"list_filter"
+			],
+			[
+				"repo",
+				"reposkill_set"
+			],
+			[
+				"mode",
+				"ModelAdmin"
+			],
+			[
+				"dis",
+				"display_name"
+			],
+			[
+				"lis",
+				"list_filter"
+			],
+			[
+				"QuestRe",
+				"QuestRecordAdmin"
+			],
+			[
+				"mod",
+				"ModelAdmin"
+			],
+			[
+				"total",
+				"total_projects"
+			],
+			[
+				"Hob",
+				"HobbyAdmin"
+			],
+			[
+				"require",
+				"RequirementQuest"
+			],
+			[
+				"REq",
+				"RequirementQuest"
+			],
+			[
+				"Ques",
+				"QuestLevel"
+			],
+			[
+				"Quest",
+				"QuestAdmin"
+			],
+			[
+				"Dev",
+				"DevClassLevel"
+			],
+			[
+				"USER",
+				"UserProfileForm"
+			],
+			[
+				"rel",
+				"related-quests"
+			],
+			[
+				"rela",
+				"related_skills"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"quest",
+				"quest-header"
+			],
+			[
+				"borderbo",
+				"border-bottom"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"ques",
+				"quest-box"
+			],
+			[
+				"Rewar",
+				"RewardInline"
+			],
+			[
+				"Req",
+				"RequirementInline"
+			],
+			[
+				"box",
+				"box-title"
+			],
+			[
+				"get",
+				"get_absolute_url"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"nor",
+				"no-repeat"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"conta",
+				"contact-info"
+			],
+			[
+				"bordertop",
+				"border-top"
+			],
+			[
+				"all",
+				"all_skills"
+			],
+			[
+				"logi",
+				"login_required"
+			],
+			[
+				"deta",
+				"detail-items"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"we",
+				"weapon"
+			],
+			[
+				"wea",
+				"weapons_group"
+			],
+			[
+				"usersk",
+				"userskill_set"
+			],
+			[
+				"edo",
+				"edit-profile-weapons"
+			],
+			[
+				"edit",
+				"edit-repo"
+			],
+			[
+				"skill",
+				"skill-visible"
+			],
+			[
+				"even",
+				"events"
+			],
+			[
+				"lib",
+				"lib_counter"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"model",
+				"models"
+			],
+			[
+				"orga",
+				"organization"
+			],
+			[
+				"organizationr",
+				"organizationreposkill_set"
+			],
+			[
+				"foun",
+				"weapons_found_str"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"Lib",
+				"LibraryManager"
+			],
+			[
+				"li",
+				"libraries"
+			],
+			[
+				"se",
+				"selected"
+			],
+			[
+				"member",
+				"membership"
+			],
+			[
+				"mem",
+				"memberships"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/pr/ironfist/app.py",
+			"settings":
+			{
+				"buffer_size": 3895,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/pr/ironfist/templates/index.html",
+			"settings":
+			{
+				"buffer_size": 1484,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/pr/ironfist/templates/layout.html",
+			"settings":
+			{
+				"buffer_size": 9673,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/pr/ironfist/templates/login.html",
+			"settings":
+			{
+				"buffer_size": 1549,
+				"line_ending": "Unix",
+				"name": "<div class=\"login-box\">"
+			}
+		},
+		{
+			"file": "/pr/ironfist/templates/developer.html",
+			"settings":
+			{
+				"buffer_size": 2528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/pr/ironfist/static/css/style.css",
+			"settings":
+			{
+				"buffer_size": 52833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/pr/ironfist/static/js/jquery.noty.js",
+			"settings":
+			{
+				"buffer_size": 16472,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/* CORE STYLES*/\n\n	/* noty bar */\n	.noty_bar.noty_theme_default {\n		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==') repeat-x scroll left top #fff;\n	}\n	\n	/* if you use noty with customContainer you can access noty with this way \n	*	 .noty_custom_container noty will add automaticly this class to your customContainer\n	*	 .noty_theme_default 		your theme\n	*	 .noty_layout_inline		your layout \n	*/\n	\n	/* custom container */\n	.noty_custom_container.noty_theme_default.noty_layout_inline {\n		position: relative;\n	}\n	\n	/* custom growl container */\n	.noty_custom_container.noty_theme_default.noty_layout_inline .noty_cont.noty_layout_inline {\n		position: static;\n	}\n		/* custom noty bar */\n		.noty_custom_container.noty_theme_default.noty_layout_inline .noty_bar {\n			border-width: 1px;\n			border-style: solid;\n			position: static;\n			-webkit-border-radius: 4px;\n			-moz-border-radius: 4px;\n			border-radius: 4px;\n			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n		}\n			.noty_custom_container.noty_theme_default.noty_layout_inline .noty_bar .noty_message {\n				font-size: 13px;\n				padding: 4px;\n			}\n				.noty_custom_container.noty_theme_default.noty_layout_inline .noty_bar .noty_message .noty_buttons {\n					margin-top: -1px;\n				}\n	\n	/* noty_message */\n	.noty_bar.noty_theme_default .noty_message {\n		padding: 8px 14px;\n		font-size: 16px;\n		font-weight: bold;\n		width: auto;\n	}\n	.noty_bar.noty_theme_default.noty_closable .noty_message {\n		padding: 8px 34px 8px 14px;\n	}\n	\n	/* noty_buttons */\n	.noty_bar.noty_theme_default .noty_message .noty_buttons {\n		float: right;\n		font-size: 13px;\n		margin-top: -4px;\n		margin-left: 4px;\n	}\n	\n	/* noty_button */\n	.noty_bar.noty_theme_default .noty_message .noty_buttons button {\n		margin-left: 5px;\n	}\n	\n	/* noty close button */\n	.noty_bar.noty_theme_default .noty_close {\n		position: absolute;\n		top: 10px;\n		right: 10px;\n		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAORJREFUeNq0lU0OgjAQhRm5gUl3rLyBB3BDQjwI4TDcgmu4NqwNJGxdueqWA4zzCJoxtvxoeckLzbz2C5ShEDNHDiXis/gkPooPY/0uvomv4ov48bUSQGUSF+Ka51WPc0kzNGwvLnm9ynHtB5B+hGkoaWDB/6t4AZOFe7ZkTxMAc1dqreU0TbnrunetbVvOsmzIPMoBrFwJYGgCY8wAgjFGDZlHFYCNK9EAXPUYmUcNgL0v1dAFMKjfRSsVx/H0hC0eOfhLmWwbfTcYozbXNsEbO/int8nhEPz4CnbAUuhfwFOAAQAA48KKOuexjwAAAABJRU5ErkJggg==');\n		width: 20px;\n		height: 20px;\n	}\n	\n	/* noty modal */\n	.noty_modal.noty_theme_default {\n		opacity: 0.7;\n	}\n	\n/* LAYOUTS */\n\n	/* noty_layout_top */\n	.noty_bar.noty_theme_default.noty_layout_top {\n		border-bottom: 3px solid #eee;\n	}\n\n	/* noty_layout_bottom */\n	.noty_bar.noty_theme_default.noty_layout_bottom {\n		border-top: 3px solid #eee;\n	}\n\n	.noty_bar.noty_theme_default.noty_layout_center .noty_close {\n		top: 8px;\n	}\n	\n	.noty_bar.noty_theme_default.noty_layout_center .noty_message .noty_buttons {\n		margin-top: -2px\n	}\n	\n	/* noty_layout_topLeft & noty_layout_topRight */\n	.noty_bar.noty_theme_default.noty_layout_center,\n	.noty_bar.noty_theme_default.noty_layout_topLeft,\n	.noty_bar.noty_theme_default.noty_layout_topRight,\n	.noty_bar.noty_theme_default.noty_layout_bottomLeft,\n	.noty_bar.noty_theme_default.noty_layout_bottomRight {\n		border: 1px solid #eee;\n		-webkit-border-radius: 5px;\n		-moz-border-radius: 5px;\n		border-radius: 5px;\n		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n	}\n	.noty_bar.noty_theme_default.noty_layout_center .noty_message,\n	.noty_bar.noty_theme_default.noty_layout_topLeft .noty_message,\n	.noty_bar.noty_theme_default.noty_layout_topRight .noty_message,\n	.noty_bar.noty_theme_default.noty_layout_bottomLeft .noty_message,\n	.noty_bar.noty_theme_default.noty_layout_bottomRight .noty_message {\n		font-size: 13px;\n		font-weight: normal;\n	}\n	.noty_bar.noty_theme_default.noty_layout_topLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_layout_topRight .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_layout_bottomLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_layout_bottomRight .noty_message .noty_buttons {\n		float: none;\n		border-top: 1px solid #ccc;\n	  margin-left: 0;\n	  margin-top: 10px;\n	  padding-top: 10px;\n	  text-align: right;\n	}\n	\n	/* noty_layout_topCenter */\n	.noty_bar.noty_theme_default.noty_layout_topCenter {\n		-webkit-border-radius: 4px;\n		-moz-border-radius: 4px;\n		border-radius: 4px;\n		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n	}\n	.noty_bar.noty_theme_default.noty_layout_topCenter .noty_message {\n		font-weight: normal;\n		font-size: 13px;\n	}\n	.noty_bar.noty_theme_default.noty_layout_topCenter .noty_close {\n		top: 50%;\n		margin-top: -10px;\n		-webkit-border-radius: 10px;\n		-moz-border-radius: 10px;\n		border-radius: 10px;\n	}\n	.noty_bar.noty_theme_default.noty_layout_topCenter.noty_success {\n		border: 1px solid #50C24E;\n	}\n	.noty_bar.noty_theme_default.noty_layout_topCenter .noty_message .noty_buttons {\n		margin-left: 15px;\n		margin-top: 0px\n	}\n	\n/* NOTIFICATION TYPES */\n\n	/* noty_notification */\n	.noty_bar.noty_theme_default.noty_notification {\n		background-color: #fff;\n		border-color: #ccc;\n    color: #555;\n	}\n	.noty_bar.noty_theme_default.noty_notification.noty_layout_topLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_notification.noty_layout_topRight .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_notification.noty_layout_bottomLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_notification.noty_layout_bottomRight .noty_message .noty_buttons {\n    border-color: #ccc;\n  }\n  \n	/* noty_warning */\n	.noty_bar.noty_theme_default.noty_warning {\n		background-color: #FFEAA8;\n		border-color: #FFC237;\n    color: #826200;\n	}\n	.noty_bar.noty_theme_default.noty_warning.noty_layout_topLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_warning.noty_layout_topRight .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_warning.noty_layout_bottomLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_warning.noty_layout_bottomRight .noty_message .noty_buttons {\n    border-color: #FFC237;\n  }\n  \n  /* noty_alert */\n	.noty_bar.noty_theme_default.noty_alert {\n		background-color: #fff;\n		border-color: #ccc;\n	}\n	.noty_bar.noty_theme_default.noty_alert.noty_layout_topLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_alert.noty_layout_topRight .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_alert.noty_layout_bottomLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_alert.noty_layout_bottomRight .noty_message .noty_buttons {\n    border-color: #ccc;\n  }\n  \n	/* noty_error */\n	.noty_bar.noty_theme_default.noty_error {\n		background-color: red;\n		color: #fff;\n		border-color: darkred;\n	}\n	.noty_bar.noty_theme_default.noty_error .noty_message {\n		font-weight: bold;\n	}\n	.noty_bar.noty_theme_default.noty_error.noty_layout_topLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_error.noty_layout_topRight .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_error.noty_layout_bottomLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_error.noty_layout_bottomRight .noty_message .noty_buttons {\n    border-color: darkred;\n  }\n  \n	/* noty_success */\n	.noty_bar.noty_theme_default.noty_success {\n		background-color: lightgreen;\n		color: darkgreen;\n		border-color: #50C24E;\n	}\n	.noty_bar.noty_theme_default.noty_success.noty_layout_topLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_success.noty_layout_topRight .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_success.noty_layout_bottomLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_success.noty_layout_bottomRight .noty_message .noty_buttons {\n    border-color: #50C24E;\n  }\n  \n	/* noty_information */\n	.noty_bar.noty_theme_default.noty_information {\n		background-color: #57B7E2;\n		border-color: #0B90C4;\n		color: #fff;\n	}\n	.noty_bar.noty_theme_default.noty_information.noty_layout_topLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_information.noty_layout_topRight .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_information.noty_layout_bottomLeft .noty_message .noty_buttons,\n	.noty_bar.noty_theme_default.noty_information.noty_layout_bottomRight .noty_message .noty_buttons {\n    border-color: #0B90C4;\n  }\n  ",
+			"file": "/pr/ironfist/static/css/noty_theme_default.css",
+			"file_size": 8752,
+			"file_write_time": 1346725298000000,
+			"settings":
+			{
+				"buffer_size": 8751,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"syntacss",
+				"Set Syntax: CSS"
+			],
+			[
+				"syntajinja",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"syntajin",
+				"Set Syntax: Jinja Templates"
+			],
+			[
+				"syntaji",
+				"Set Syntax: Jinja Templates"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"syjade",
+				"Set Syntax: Jade"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntajad",
+				"Set Syntax: Jade"
+			],
+			[
+				"syntajade",
+				"Set Syntax: Jade"
+			],
+			[
+				"pre",
+				"Preferences: Settings - Default"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"syles",
+				"Set Syntax: LESS"
+			],
+			[
+				"syncss",
+				"Set Syntax: CSS"
+			],
+			[
+				"syntcss",
+				"Set Syntax: CSS"
+			],
+			[
+				"syntaht",
+				"Set Syntax: HTML"
+			],
+			[
+				"syjas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"synpyt",
+				"Set Syntax: Python"
+			],
+			[
+				"syntapy",
+				"Set Syntax: Python"
+			],
+			[
+				"pacak",
+				"Package Control: List Packages"
+			],
+			[
+				"syntapyt",
+				"Set Syntax: Python"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"identa",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"preferde",
+				"Preferences: Settings - Default"
+			],
+			[
+				"settings",
+				"Preferences: Settings - Default"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/pr/ironfist/static/css/jquery.noty.css",
+		"/pr/ironfist/test.py",
+		"/pr/laconf-website/lib/speakers.js",
+		"/pr/laconf-website/views/parts/header.jade",
+		"/pr/laconf-website/public/stylesheets/footer.less",
+		"/pr/laconf-website/views/parts/footer.jade",
+		"/pr/laconf-website/public/stylesheets/mixins.less",
+		"/pr/laconf-website/public/stylesheets/normalize.less",
+		"/pr/laconf-website/public/stylesheets/style.css",
+		"/pr/laconf-website/public/stylesheets/schedule.less",
+		"/pr/laconf-website/public/stylesheets/header.less",
+		"/pr/laconf-website/views/index.jade",
+		"/pr/laconf-website/public/stylesheets/components.less",
+		"/pr/laconf-website/public/stylesheets/layout.less",
+		"/pr/laconf-website/node_modules/less-middleware/node_modules/less/test/less/mixins.less",
+		"/pr/laconf-website/public/stylesheets/speakers.less",
+		"/pr/laconf-website/public/speakers.json",
+		"/pr/laconf-website/public/stylesheets/fonts.less",
+		"/pr/laconf-website/views/parts/sponsors.jade",
+		"/pr/laconf-website/public/stylesheets/style.less",
+		"/pr/laconf-website/views/parts/speakers.jade",
+		"/pr/laconf-website/public/stylesheets/venue.less",
+		"/pr/laconf-website/public/stylesheets/sponsors.less",
+		"/pr/laconf-website/public/stylesheets/variables.less",
+		"/pr/laconf-website/views/parts/schedule.jade",
+		"/pr/laconf-website/server.js",
+		"/pr/laconf-website/views/parts/venue.jade",
+		"/home/agares/.config/sublime-text-2/Packages/User/LESS.sublime-settings",
+		"/home/agares/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/agares/.config/sublime-text-2/Packages/User/Jade.sublime-settings",
+		"/home/agares/.config/sublime-text-2/Packages/User/Plain text.sublime-settings",
+		"/home/agares/.config/sublime-text-2/Packages/User/JSON.sublime-settings",
+		"/pr/laconf-website/public/stylesheets/index.less",
+		"/pr/laconf-website/routes/index.js",
+		"/pr/laconf-website/lib/dbconfig.js",
+		"/pr/laconf-website/app.js",
+		"/pr/laconf-website/README.md",
+		"/pr/laconf-website/public/stylesheets/style.styl",
+		"/pr/laconf-website/views/index.ejs",
+		"/pr/laconf-website/routes/speaker.js",
+		"/pr/laconf-website/views/speakers.ejs",
+		"/pr/laconf-website/routes/user.js",
+		"/home/agares/ccore/core/templates/quest/quest.html",
+		"/home/agares/ccore/core/templates/_trending-news.html",
+		"/home/agares/ccore/core/templates/publicProfile.html",
+		"/home/agares/ccore/core/templates/_trending-repos.html",
+		"/home/agares/ccore/core/templates/edit/editUser.html",
+		"/home/agares/ccore/core/forms.py",
+		"/home/agares/ccore/third_parties/github_mongo/commits.py",
+		"/home/agares/ccore/core/views/quest.py",
+		"/home/agares/ccore/core/templates/edit/editProjects.html",
+		"/home/agares/ccore/core/views/home.py",
+		"/home/agares/ccore/core/urls.py",
+		"/home/agares/ccore/core/views/profile.py",
+		"/home/agares/ccore/core/models/__init__.py",
+		"/home/agares/ccore/core/models/dev_class.py",
+		"/home/agares/ccore/core/admin.py",
+		"/home/agares/ccore/core/models/level.py",
+		"/home/agares/ccore/core/models/repo.py",
+		"/home/agares/ccore/core/models/user_profile.py",
+		"/home/agares/ccore/core/templates/quest/quests.html",
+		"/home/agares/ccore/core/models/user_skill.py",
+		"/home/agares/ccore/core/utils/auth.py",
+		"/home/agares/ccore/core/static/css/home.css",
+		"/home/agares/ccore/core/static/js/quest.js",
+		"/home/agares/ccore/core/views/__init__.py",
+		"/home/agares/ccore/core/templates/base.html",
+		"/home/agares/ccore/core/models/quest.py",
+		"/home/agares/ccore/core/static/js/profile_settings.js",
+		"/home/agares/ccore/core/templates/quest/quest_deliver.html",
+		"/home/agares/ccore/core/models/organization.py",
+		"/home/agares/ccore/core/models/hobby.py",
+		"/home/agares/ccore/core/models/skill.py",
+		"/home/agares/ccore/core/__init__.py",
+		"/home/agares/ccore/core/models/repo_skill.py",
+		"/home/agares/ccore/core/templates/userDashboard.html",
+		"/home/agares/ccore/api/utils.py",
+		"/home/agares/ccore/core/templates/edit/addSkills.html",
+		"/home/agares/ccore/core/templates/edit/editMenu.html",
+		"/home/agares/ccore/core/templates/rankingFilter.html",
+		"/home/agares/ccore/core/utils/dashboard.py",
+		"/pr/agaresco/app.js",
+		"/home/agares/ccore/core/views/user.py",
+		"/home/agares/ccore/settings.py",
+		"/home/agares/ccore/core/pipeline.py",
+		"/home/agares/ccore/core/models/weapon.py",
+		"/home/agares/ccore/core/templates/edit/editWeapons.html",
+		"/home/agares/ccore/core/static/css/codetag.css",
+		"/home/agares/ccore/core/utils/ranking.py",
+		"/home/agares/ccore/core/templates/edit/editTeams.html",
+		"/home/agares/ccore/core/templates/home.html",
+		"/home/agares/ccore/core/templates/edit/editSkills.html",
+		"/home/agares/ccore/core/tasks.py",
+		"/home/agares/ccore/third_parties/github_api/repos.py",
+		"/home/agares/ccore/third_parties/github.py",
+		"/home/agares/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/agares/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/agares/ccore/urls.py",
+		"/home/agares/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/agares/ccore/api/forms.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/home/agares/ccore/core/static/js",
+			"",
+			"/home/agares/ccore/core/views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"message_welcome1",
+			"search-dev",
+			"print",
+			"none",
+			"src=\"",
+			"'",
+			"src=\"",
+			"meter",
+			"class=\"row",
+			"mongo",
+			"Create my own Cheat Sheet",
+			"values",
+			"]\n",
+			"console",
+			"e.which",
+			";\n",
+			"tag-line",
+			"tagline",
+			"last-child",
+			"from",
+			"speaker",
+			"80x80",
+			";",
+			"box",
+			"big-arrow-width",
+			"big-padding",
+			"big-height",
+			"button-height",
+			"cta",
+			"cta-height",
+			"container",
+			"\"",
+			"url(\"border-image.png\")",
+			"spacing",
+			"four.columns",
+			".cta:",
+			"18px",
+			"30px",
+			"20",
+			"30",
+			"hidden\ndraw",
+			"nav#head-nav",
+			"#",
+			"#head-nav",
+			"nav",
+			"#head-nav",
+			"header",
+			",",
+			"'",
+			"_",
+			"\"",
+			"href=\"#\"",
+			">",
+			"\"",
+			" id=\"",
+			"<",
+			"</",
+			"\"",
+			" class=\"",
+			" id=\"",
+			"/",
+			"<",
+			"\"",
+			">",
+			"/",
+			"/h3",
+			"/",
+			"<",
+			"li",
+			"li ",
+			" \n      a",
+			" \n      ",
+			"\"",
+			"href=\"#\"",
+			"/",
+			">",
+			"<",
+			"\">",
+			" class=\"",
+			"<div class=\"four columns\">",
+			"/routes/user",
+			"button",
+			"40a3a2",
+			"data",
+			"offset",
+			"profile-box-team",
+			"-offset",
+			"repo",
+			"trending_repos",
+			"'userDashboard.html'",
+			"'dashboard.html'",
+			"header",
+			"trending-repo",
+			"trending-repos",
+			"dashboard-improve-your-skills",
+			"center-pane",
+			"user-block",
+			"user-block avatar",
+			"user-info",
+			"user-block",
+			"slugify",
+			"slu",
+			"}\n",
+			"owner",
+			"\"",
+			"membership",
+			"class Requirement",
+			"class Repo",
+			"iron_fist",
+			"class Repo",
+			"class Level",
+			"sites",
+			"class",
+			"iron_fist",
+			"followers",
+			"==",
+			" == ",
+			"==",
+			"not_interested",
+			"id_job_available_{{ value }}",
+			"radio",
+			"span",
+			"input[type=\"radio\"]",
+			"7",
+			"check",
+			"webPage",
+			"AVALAIBILITY",
+			"JOB"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"box-title",
+			"box-common"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/pr/ironfist/app.py",
+					"settings":
+					{
+						"buffer_size": 3895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								765,
+								765
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 206.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/pr/ironfist/templates/index.html",
+					"settings":
+					{
+						"buffer_size": 1484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1267,
+								1267
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/pr/ironfist/templates/layout.html",
+					"settings":
+					{
+						"buffer_size": 9673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2696,
+								2696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 662.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/pr/ironfist/templates/login.html",
+					"settings":
+					{
+						"buffer_size": 1549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div class=\"login-box\">",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/pr/ironfist/templates/developer.html",
+					"settings":
+					{
+						"buffer_size": 2528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/pr/ironfist/static/css/style.css",
+					"settings":
+					{
+						"buffer_size": 52833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29276,
+								29276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 17314.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/pr/ironfist/static/js/jquery.noty.js",
+					"settings":
+					{
+						"buffer_size": 16472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4389.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/pr/ironfist/static/css/noty_theme_default.css",
+					"settings":
+					{
+						"buffer_size": 8751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								903,
+								903
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"staticcss",
+				"static/css/style.css"
+			],
+			[
+				"sty",
+				"static/css/style.css"
+			],
+			[
+				"no",
+				"static/css/jquery.noty.css"
+			],
+			[
+				"noty",
+				"static/js/jquery.noty.js"
+			],
+			[
+				"inde",
+				"templates/index.html"
+			],
+			[
+				"ap",
+				"app.py"
+			],
+			[
+				"reu",
+				"static/css/reuze.css"
+			],
+			[
+				"html",
+				"templates/index.html"
+			],
+			[
+				"header",
+				"views/parts/header.jade"
+			],
+			[
+				".less",
+				"public/stylesheets/middle.less"
+			],
+			[
+				"mixi",
+				"public/stylesheets/mixins.less"
+			],
+			[
+				"speles",
+				"public/stylesheets/speakers.less"
+			],
+			[
+				"venu",
+				"public/stylesheets/venue.less"
+			],
+			[
+				"footer",
+				"public/stylesheets/footer.less"
+			],
+			[
+				"font",
+				"public/stylesheets/fonts.less"
+			],
+			[
+				"varia",
+				"public/stylesheets/variables.less"
+			],
+			[
+				"spejad",
+				"views/parts/speakers.jade"
+			],
+			[
+				"spojs",
+				"lib/sponsors.js"
+			],
+			[
+				"va",
+				"public/stylesheets/variables.less"
+			],
+			[
+				"headerles",
+				"public/stylesheets/header.less"
+			],
+			[
+				"headerja",
+				"views/parts/header.jade"
+			],
+			[
+				"headerle",
+				"public/stylesheets/header.less"
+			],
+			[
+				"index",
+				"views/index.jade"
+			],
+			[
+				"speajad",
+				"views/parts/speakers.jade"
+			],
+			[
+				"sponsles",
+				"public/stylesheets/sponsors.less"
+			],
+			[
+				"midd",
+				"public/stylesheets/middle.less"
+			],
+			[
+				"sponsorja",
+				"views/parts/sponsors.jade"
+			],
+			[
+				"footerj",
+				"views/parts/footer.jade"
+			],
+			[
+				"footerad",
+				"views/parts/footer.jade"
+			],
+			[
+				"spe",
+				"public/stylesheets/speakers.less"
+			],
+			[
+				"heals",
+				"public/stylesheets/header.less"
+			],
+			[
+				"mixin",
+				"public/stylesheets/mixins.less"
+			],
+			[
+				"headja",
+				"views/parts/header.jade"
+			],
+			[
+				"spea",
+				"public/stylesheets/speakers.less"
+			],
+			[
+				"ven",
+				"public/stylesheets/venue.less"
+			],
+			[
+				"vari",
+				"public/stylesheets/variables.less"
+			],
+			[
+				"indexja",
+				"views/index.jade"
+			],
+			[
+				"questhtm",
+				"core/templates/quest/quest.html"
+			],
+			[
+				"questhml",
+				"core/templates/quest/quest.html"
+			],
+			[
+				"questjs",
+				"core/static/js/quest.js"
+			],
+			[
+				"trend",
+				"core/templates/_trending-news.html"
+			],
+			[
+				"simp",
+				"core/static/js/simple-graphics.js"
+			],
+			[
+				"profile",
+				"core/templates/publicProfile.html"
+			],
+			[
+				"git_clon",
+				"third_parties/git_clone.py"
+			],
+			[
+				"user",
+				"core/views/user.py"
+			],
+			[
+				"_tren",
+				"core/templates/_trending-news.html"
+			],
+			[
+				"trendi",
+				"core/templates/_trending-repos.html"
+			],
+			[
+				"profilehtml",
+				"core/templates/publicProfile.html"
+			],
+			[
+				"dashboarht",
+				"core/templates/userDashboard.html"
+			],
+			[
+				"delive",
+				"core/templates/quest/quest_deliver.html"
+			],
+			[
+				"quest",
+				"core/models/quest.py"
+			],
+			[
+				"userskil",
+				"core/models/user_skill.py"
+			],
+			[
+				"admin",
+				"core/admin.py"
+			],
+			[
+				"modelsinit",
+				"core/models/__init__.py"
+			],
+			[
+				"userskill",
+				"core/models/user_skill.py"
+			],
+			[
+				"js",
+				"core/static/js/profile_settings.js"
+			],
+			[
+				"url",
+				"core/urls.py"
+			],
+			[
+				"viewinit",
+				"core/views/__init__.py"
+			],
+			[
+				"modelsques",
+				"core/models/quest.py"
+			],
+			[
+				"viewques",
+				"core/views/quest.py"
+			],
+			[
+				"codetac",
+				"core/static/css/codetag.css"
+			],
+			[
+				"bashtm",
+				"core/templates/base.html"
+			],
+			[
+				"quht",
+				"core/templates/quest/quest.html"
+			],
+			[
+				"hoby",
+				"core/models/hobby.py"
+			],
+			[
+				"modelini",
+				"core/models/__init__.py"
+			],
+			[
+				"modeques",
+				"core/models/quest.py"
+			],
+			[
+				"dev_",
+				"core/models/dev_class.py"
+			],
+			[
+				"editpro",
+				"core/templates/edit/editProjects.html"
+			],
+			[
+				"codecss",
+				"core/static/css/codetag.css"
+			],
+			[
+				"forms",
+				"core/forms.py"
+			],
+			[
+				"edit",
+				"core/templates/edit/editUser.html"
+			],
+			[
+				"prof",
+				"core/views/profile.py"
+			],
+			[
+				"userprof",
+				"core/models/user_profile.py"
+			],
+			[
+				"viewhome",
+				"core/views/home.py"
+			],
+			[
+				"base",
+				"core/templates/base.html"
+			],
+			[
+				"urls",
+				"core/urls.py"
+			],
+			[
+				"init__",
+				"core/__init__.py"
+			],
+			[
+				"viewsini",
+				"core/views/__init__.py"
+			],
+			[
+				"dash",
+				"core/templates/userDashboard.html"
+			],
+			[
+				"skill",
+				"core/models/skill.py"
+			],
+			[
+				"cocss",
+				"core/static/css/codetag.css"
+			],
+			[
+				"utils",
+				"api/utils.py"
+			],
+			[
+				"addski",
+				"core/templates/edit/addSkills.html"
+			],
+			[
+				"admi",
+				"core/admin.py"
+			],
+			[
+				"questht",
+				"core/templates/quest/quest.html"
+			],
+			[
+				"modelinit",
+				"core/models/__init__.py"
+			],
+			[
+				"level",
+				"core/models/level.py"
+			],
+			[
+				"menu",
+				"core/templates/edit/editMenu.html"
+			],
+			[
+				"codetacss",
+				"core/static/css/codetag.css"
+			],
+			[
+				"userpo",
+				"core/models/user_profile.py"
+			],
+			[
+				"modequ",
+				"core/models/quest.py"
+			],
+			[
+				"quesht",
+				"core/templates/quest/quest.html"
+			],
+			[
+				"viewque",
+				"core/views/quest.py"
+			],
+			[
+				"rankinhtml",
+				"core/templates/rankingFilter.html"
+			],
+			[
+				"view",
+				"core/views/user.py"
+			],
+			[
+				"modelpro",
+				"core/models/user_profile.py"
+			],
+			[
+				"homecs",
+				"core/static/css/home.css"
+			],
+			[
+				"das",
+				"core/utils/dashboard.py"
+			],
+			[
+				"dashbo",
+				"core/templates/userDashboard.html"
+			],
+			[
+				"addskill",
+				"core/templates/edit/addSkills.html"
+			],
+			[
+				"publi",
+				"core/templates/publicProfile.html"
+			],
+			[
+				"setti",
+				"settings.py"
+			],
+			[
+				"userpro",
+				"core/models/user_profile.py"
+			],
+			[
+				"vhome",
+				"core/views/home.py"
+			],
+			[
+				"hoe",
+				"core/templates/home.html"
+			],
+			[
+				"wea",
+				"core/models/weapon.py"
+			],
+			[
+				"edite",
+				"core/templates/edit/editTeams.html"
+			],
+			[
+				"home",
+				"core/views/home.py"
+			],
+			[
+				"pro",
+				"core/views/profile.py"
+			],
+			[
+				"user_pr",
+				"core/models/user_profile.py"
+			],
+			[
+				"dashh",
+				"core/templates/userDashboard.html"
+			],
+			[
+				"editset",
+				"core/templates/edit/editUser.html"
+			],
+			[
+				"weapo",
+				"core/templates/edit/editWeapons.html"
+			],
+			[
+				"repo",
+				"core/models/repo.py"
+			],
+			[
+				"editte",
+				"core/templates/edit/editTeams.html"
+			],
+			[
+				"userski",
+				"core/models/user_skill.py"
+			],
+			[
+				"organ",
+				"core/models/organization.py"
+			],
+			[
+				"task",
+				"core/tasks.py"
+			],
+			[
+				"dashboar",
+				"core/templates/userDashboard.html"
+			],
+			[
+				"reposki",
+				"core/models/repo_skill.py"
+			],
+			[
+				"pu",
+				"core/templates/publicProfile.html"
+			],
+			[
+				"user_prof",
+				"core/models/user_profile.py"
+			],
+			[
+				"repopy",
+				"core/models/repo.py"
+			],
+			[
+				"pp",
+				"core/templates/publicProfile.html"
+			],
+			[
+				"orga",
+				"core/models/organization.py"
+			],
+			[
+				"githbapirepo",
+				"third_parties/github_api/repos.py"
+			],
+			[
+				"gith",
+				"third_parties/github.py"
+			],
+			[
+				"userpy",
+				"core/views/user.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"che",
+				"/pr/cheats.sublime-project"
+			],
+			[
+				"code",
+				"/pr/codetag-sublime-project"
+			],
+			[
+				"",
+				"/pr/agaresco.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true
+}

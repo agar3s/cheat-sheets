@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h3>{{ sheet.name }}</h3>
+    <table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>key</th>
+            <th>value</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for key, value in sheet.variables.items() %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+    <a href="/">back</a>
+
+{% endblock %}

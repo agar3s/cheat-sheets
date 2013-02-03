@@ -20,9 +20,11 @@ else:
     connection = Connection('localhost', 27017)
     db = connection['MyDB']
 
+
 @app.route('/')
 def index():
-    return render_template('index.html', cheat_sheets=db.sheets.find())
+    return render_template('index.html', cheat_sheets=db.sheets.find(sort=[("_id", -1)]))
+
 
 @app.route('/new', methods=['POST', 'GET'])
 def create_sheet():
@@ -44,6 +46,10 @@ def create_sheet():
     return render_template('create.html')
 
 
+@app.route('/view/<name>')
+def view_sheet(name):
+    sheet = db.sheets.find_one({'name':name})
+    return render_template('view.html', sheet = sheet)
 
 app.debug = True
 
