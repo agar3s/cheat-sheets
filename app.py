@@ -4,10 +4,11 @@ from flask import Flask
 from flask.ext.pymongo import PyMongo
 from pymongo import Connection
 from flask import render_template, request, redirect, url_for
+from flask_login import LoginManager, login_user
 
 app = Flask(__name__)
 
- 
+# mongo configuration
 MONGO_URL = os.environ.get('MONGOHQ_URL')
  
 if MONGO_URL:
@@ -16,6 +17,22 @@ if MONGO_URL:
 else:
     connection = Connection('localhost', 27017)
     db = connection['MyDB']
+
+
+#login manager
+login_manager = LoginManager()
+login_manager.setup_app(app)
+
+
+@login_manager.user_loader
+def load_user(userid):
+    return {'username':userid,'name':'fulano'}
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    login_user({'username':userid,'name':'fulano'})
+    return redirect(request.args.get("next") or url_for("index"))
 
 
 @app.route('/')
@@ -80,6 +97,7 @@ def edit_sheet(name):
 
 
 app.debug = True
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
