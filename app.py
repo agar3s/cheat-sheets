@@ -31,8 +31,12 @@ def load_user(userid):
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
-    login_user({'username':userid,'name':'fulano'})
-    return redirect(request.args.get("next") or url_for("index"))
+    if request.method == 'POST':
+        login_user({'username':userid,'name':'fulano'})
+        return redirect(request.args.get("next") or url_for("index"))
+    
+    elif request.method == 'GET':
+        return render_template('login.html')
 
 
 @app.route('/')
