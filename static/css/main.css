@@ -13,3 +13,9 @@
 .control-group > * {
   margin-right: 5px;
 }
+
+@media (min-width: 1200px) {
+  body {
+    padding-top: 80px;
+  }
+}

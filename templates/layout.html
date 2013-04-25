@@ -7,21 +7,56 @@
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-responsive.min.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     {% block head %}
     {% endblock %}
   </head>
+
   <body>
-    <div class="container">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid" style="max-width:1200px;margin: 0 auto;">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" style="padding: 0" href="../"><h1>CheatSheets</h1></a>
+          <div class="nav-collapse collapse">
+            {% if current_user.is_anonymous() %}
+            <form class="navbar-form pull-right" action="{{ url_for('login') }}" method=POST>
+              <input type="text" class="input-small" placeholder="Username" name="username">
+              <input type="password" class="input-small" placeholder="Password" name="password">
+              <button type="submit" class="btn btn-primary">Go</button>
+              <span class="divider-vertical"></span>
+              <a href="{{ url_for('register') }}" class="btn btn-info">Register</a>
+            </form>
+            {% else %}
+            <ul class="nav pull-right">
+              <li><a href="#">My sheets</a></li>
+              <li><a href="#">settings</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="{{ url_for('logout') }}">logout</a></li>
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="max-width:1200px;margin: 0 auto;">
       {% block content %}
       {% endblock %}
       <hr>
       <footer>
+        {{ current_user.is_anonymous() }}
 
         Made by <a target="_blank" href="http://agares.co">Giovanny Beltran</a>. follow me <a href="http://twitter.com/agar3s">@agar3s</a>.<br/>
       </footer>
     </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
     {% block extra_js %}
     {% endblock %}
   </body>

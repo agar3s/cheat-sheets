@@ -3,8 +3,8 @@ from urlparse import urlparse
 from flask import Flask
 from flask.ext.pymongo import PyMongo
 from pymongo import Connection
-from flask import render_template, request, redirect, url_for
-from flask_login import LoginManager, login_user
+from flask import render_template, request, redirect, url_for, session, g
+from flask_login import LoginManager, login_user, UserMixin, AnonymousUser, login_required, logout_user, current_user
 
 app = Flask(__name__)
 
@@ -24,23 +24,52 @@ login_manager = LoginManager()
 login_manager.setup_app(app)
 
 
+
 @login_manager.user_loader
 def load_user(userid):
-    return {'username':userid,'name':'fulano'}
+    #get the user 3
+    user = UserMixin()
+    user.username = "agaritos"
+    user.id = 3
+    g.user = user
+    return user
 
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == 'POST':
-        login_user({'username':userid,'name':'fulano'})
+        user = request.form.to_dict()
+        user = UserMixin()
+        user.username = "agaritos"
+        user.id = 3
+        login_user(user)
+        g.user = user
+        return redirect(request.args.get("next") or url_for("index"))
+    
+    return render_template('login.html')
+
+
+@app.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    g.user = None
+    return redirect(url_for('index'))
+
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == 'POST':
+        request.form.to_dict()
         return redirect(request.args.get("next") or url_for("index"))
     
     elif request.method == 'GET':
-        return render_template('login.html')
+        return render_template('register.html')
 
 
 @app.route('/')
 def index():
+    print session
     return render_template('index.html', cheat_sheets=db.sheets.find(sort=[("_id", -1)]))
 
 
