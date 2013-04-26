@@ -94,7 +94,7 @@ def register():
 
         user = UserMixin()
         user.username = new_user['username']
-        user.id = user_found['_id'].__str__()
+        user.id = new_user['_id'].__str__()
         login_user(user)
 
         return redirect(request.args.get("next") or url_for("index"))
