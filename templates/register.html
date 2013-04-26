@@ -4,30 +4,34 @@
 {% block description %}Register in the Cheat Sheets{% endblock %}
 {% block content %}
 
-    <h2>Login</h2>
+    <h2>Register</h2>
     <div class="">
-        <form class="form-horizontal well">
+        <form class="form-horizontal well" method=POST>
             <fieldset>
                 <legend>Register to create private cheat sheets</legend>
+                {% if errors and errors.used %}<p>{{ errors.used }}</p>{% endif %}
                 <div class="control-group">
                     <label class="control-label" for="username">Username</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="username">
+                        <input type="text" class="input-xlarge" id="username" name="username" value="{{ new_user.username }}">
                         <p class="help-block">choose a cool username to identify your cheat sheets</p>
+                        {% if errors and errors.username %}<p>{{ errors.username }}</p>{% endif %}
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
-                        <input type="password" class="input-xlarge" id="password">
+                        <input type="password" class="input-xlarge" id="password" name="password" value="{{ new_user.password }}">
                         <p class="help-block">put your password, dont put it in a cheat sheet!</p>
+                        {% if errors and errors.password %}<p>{{ errors.password }}</p>{% endif %}
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="email">Email</label>
                     <div class="controls">
-                        <input type="email" class="input-xlarge" id="email">
+                        <input type="email" class="input-xlarge" id="email" name="email" value="{{ new_user.email }}">
                         <p class="help-block">Put your email, we use only in case you need to recover your password</p>
+                        {% if errors and errors.email %}<p>{{ errors.email }}</p>{% endif %}
                     </div>
                 </div>
                 <div class="form-actions">

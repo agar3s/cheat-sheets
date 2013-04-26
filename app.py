@@ -1,9 +1,9 @@
 import os
 from urlparse import urlparse
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for, session, g
 from flask.ext.pymongo import PyMongo
 from pymongo import Connection
-from flask import render_template, request, redirect, url_for, session, g
+from bson.objectid import ObjectId
 from flask_login import LoginManager, login_user, UserMixin, AnonymousUser, login_required, logout_user, current_user
 
 app = Flask(__name__)
@@ -28,9 +28,10 @@ login_manager.setup_app(app)
 @login_manager.user_loader
 def load_user(userid):
     #get the user 3
+    user_found = db.users.find_one({'_id': ObjectId(userid)})
     user = UserMixin()
-    user.username = "agaritos"
-    user.id = 3
+    user.username = user_found['username']
+    user.id = user_found['_id'].__str__()
     g.user = user
     return user
 
@@ -39,9 +40,20 @@ def load_user(userid):
 def login():
     if request.method == 'POST':
         user = request.form.to_dict()
+
+        #incomplete data
+        if not 'username' in user or not 'password' in user:
+            return redirect(url_for("login"))
+
+        user_found = db.users.find_one({'username':user['username'], 'password':user['password']})
+
+        #username or password incorrect
+        if not user_found:
+            return redirect(url_for("login"))
+
         user = UserMixin()
-        user.username = "agaritos"
-        user.id = 3
+        user.username = user_found['username']
+        user.id = user_found['_id'].__str__()
         login_user(user)
         g.user = user
         return redirect(request.args.get("next") or url_for("index"))
@@ -60,16 +72,39 @@ def logout():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == 'POST':
-        request.form.to_dict()
+        new_user = request.form.to_dict()
+
+        #incomplete data
+        errors = {}
+        new_user['username'] = new_user['username'].strip().lower()
+        if len(new_user['username']) == 0:
+            errors['username'] = 'your username can\'t be blank'
+
+        if len(new_user['password']) == 0:
+            errors['password'] = 'you need a password '
+
+        #user already registered
+        if db.users.find_one({'username':new_user['username']}):
+            errors['used'] = 'The user %s is already registered, do you forget your password?' % new_user['username']
+        
+        if len(errors) > 0:
+            return render_template('register.html', new_user=new_user, errors=errors)
+
+        db.users.save(new_user)
+
+        user = UserMixin()
+        user.username = new_user['username']
+        user.id = user_found['_id'].__str__()
+        login_user(user)
+
         return redirect(request.args.get("next") or url_for("index"))
     
     elif request.method == 'GET':
-        return render_template('register.html')
+        return render_template('register.html', new_user= {'username':'', 'password':'', 'email':''})
 
 
 @app.route('/')
 def index():
-    print session
     return render_template('index.html', cheat_sheets=db.sheets.find(sort=[("_id", -1)]))
 
 
