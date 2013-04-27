@@ -135,7 +135,7 @@ def create_sheet():
         cheat_sheet['variables'] = variables
 
         db.sheets.save(cheat_sheet)
-        return redirect(url_for('view_sheet', name=cheat_sheet['name']))
+        return redirect(url_for('view_sheet', owner=cheat_sheet['owner'], name=cheat_sheet['name']))
 
     return render_template('create.html')
 
