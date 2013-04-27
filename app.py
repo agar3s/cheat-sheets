@@ -42,14 +42,21 @@ def login():
         user = request.form.to_dict()
 
         #incomplete data
-        if not 'username' in user or not 'password' in user:
-            return redirect(url_for("login"))
+        #incomplete data
+        errors = {}
+        user['username'] = user['username'].strip().lower()
+        if len(user['username']) == 0:
+            errors['username'] = 'your username can\'t be blank'
+
+        if len(user['password']) == 0:
+            errors['password'] = 'you need a password '
 
         user_found = db.users.find_one({'username':user['username'], 'password':user['password']})
 
         #username or password incorrect
         if not user_found:
-            return redirect(url_for("login"))
+            errors['not_valid'] = 'username or password is not valid'
+            return render_template('login.html', user = user, errors = errors)
 
         user = UserMixin()
         user.username = user_found['username']
@@ -58,7 +65,7 @@ def login():
         g.user = user
         return redirect(request.args.get("next") or url_for("index"))
     
-    return render_template('login.html')
+    return render_template('login.html', user= {'username':'', 'password':''})
 
 
 @app.route("/logout")
@@ -85,7 +92,7 @@ def register():
 
         #user already registered
         if db.users.find_one({'username':new_user['username']}):
-            errors['used'] = 'The user %s is already registered, do you forget your password?' % new_user['username']
+            errors['username'] = 'The user %s is already registered' % new_user['username']
         
         if len(errors) > 0:
             return render_template('register.html', new_user=new_user, errors=errors)
@@ -105,16 +112,20 @@ def register():
 
 @app.route('/')
 def index():
-    return render_template('index.html', cheat_sheets=db.sheets.find(sort=[("_id", -1)]))
+    query = {'public': {'$ne':False}} if current_user.is_anonymous() else { '$or': [{'owner':current_user.username},{'public': {'$ne':False}}] }
+    return render_template('index.html', cheat_sheets=db.sheets.find(query, sort=[("_id", -1)]))
 
 
 @app.route('/new', methods=['POST', 'GET'])
+@login_required
 def create_sheet():
     if request.method == 'POST':
         cheat_sheet_pre = request.form.to_dict()
         cheat_sheet = {}
         cheat_sheet['name'] = cheat_sheet_pre['name']
         cheat_sheet['description'] = cheat_sheet_pre['description']
+        cheat_sheet['public'] = 'public' in cheat_sheet_pre
+        cheat_sheet['owner'] = current_user.username
 
         index = 1
         variables = {}
@@ -129,19 +140,20 @@ def create_sheet():
     return render_template('create.html')
 
 
-@app.route('/view/<name>')
-def view_sheet(name):
-    sheet = db.sheets.find_one({'name':name})
-    if sheet:
-        return render_template('view.html', sheet = sheet)
-    
-    return redirect(url_for('index'))
+@app.route('/view/<owner>/<name>')
+def view_sheet(owner, name):
+    sheet = db.sheets.find_one({'name':name, 'owner':owner})
+    if not sheet or (not sheet['public'] and current_user.username != owner):
+        return redirect(url_for('index'))
+
+    return render_template('view.html', sheet = sheet)
 
 
-@app.route('/edit/<name>', methods=['POST', 'GET'])
-def edit_sheet(name):
-    sheet = db.sheets.find_one({'name':name})
-    if not sheet:
+@app.route('/edit/<owner>/<name>', methods=['POST', 'GET'])
+@login_required
+def edit_sheet(owner, name):
+    sheet = db.sheets.find_one({'name':name, 'owner':owner})
+    if not sheet or (not sheet['public'] and current_user.username != owner):
         return redirect(url_for('index'))
 
     if request.method == 'POST':
@@ -149,6 +161,8 @@ def edit_sheet(name):
         cheat_sheet = {}
         cheat_sheet['name'] = name
         cheat_sheet['description'] = cheat_sheet_pre['description']
+        cheat_sheet['public'] = 'public' in cheat_sheet_pre
+        
 
         index = 1
         variables = {}
@@ -157,7 +171,7 @@ def edit_sheet(name):
             index += 1;
         cheat_sheet['variables'] = variables
 
-        db.sheets.update({'name':name}, cheat_sheet)
+        db.sheets.update({'name':name, 'owner':owner}, cheat_sheet)
         return redirect(url_for('view_sheet', name=name))
 
     return render_template('edit.html', sheet = sheet)

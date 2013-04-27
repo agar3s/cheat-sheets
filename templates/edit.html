@@ -3,11 +3,11 @@
 {% block title %}Create your own Cheat Sheet{% endblock %}
 {% block content %}
 
-    <h2>Editing the {{ sheet.name }} Cheat Sheet</h2>
+    <h2>Editing {{ sheet.owner}}/{{ sheet.name }}</h2>
     <div class="">
 	    <form id="cheat-sheet" class="form well" method=POST>
         <fieldset>
-            <legend>Edit and add the variables for the {{ sheet.name }} Cheat Sheet</legend>
+            <legend>Edit and add the variables for the {{ sheet.owner}}/{{ sheet.name }} Cheat Sheet</legend>
             <div class="control-group">
                 <label class="control-label" for="name">Cheat Sheet name</label>
                 <input id="name" name="name" disabled
@@ -46,13 +46,23 @@
                 {% endfor %}
             </div>
             <button id="add" class="btn btn-success" type="submit"><i class="icon-plus icon-white"></i>add</button>
+            {% if current_user.is_active() and current_user.username == sheet.owner %}
+                <hr>
+                <div class="control-group">
+                    <label class="control-label" for="public">Make this cheat sheet public to everyone?</label>
+                    <label class="checkbox">
+                        public sheet
+                        <input type="checkbox" id="public" name="public" {% if sheet.public %}checked{% endif %}/>
+                    </label>
+                </div>
+            {% endif %}
             <div class="form-actions">
                 <button class="btn btn-primary btn-large" type="submit">Save changes</button>
                 <a class="btn btn-large" type="reset" href="/">Cancel</a>
             </div>
         </fieldset>
 	    </form>
-	    <a href="{{ url_for('view_sheet', name=sheet.name) }}">Back</a>
+	    <a href="{{ url_for('view_sheet', owner=sheet.owner, name=sheet.name) }}">Back</a>
 	</div>
 
 {% endblock %}

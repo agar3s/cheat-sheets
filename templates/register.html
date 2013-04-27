@@ -9,34 +9,38 @@
         <form class="form-horizontal well" method=POST>
             <fieldset>
                 <legend>Register to create private cheat sheets</legend>
-                {% if errors and errors.used %}<p>{{ errors.used }}</p>{% endif %}
-                <div class="control-group">
+                {% if errors and errors.used %}
+                <div class="control-group error">
+                    <span class="help-inline">{{ errors.used }}</span>
+                </div>
+                {% endif %}
+                <div class="control-group {% if errors and errors.username %}error{% endif %}">
                     <label class="control-label" for="username">Username</label>
                     <div class="controls">
                         <input type="text" class="input-xlarge" id="username" name="username" value="{{ new_user.username }}">
-                        <p class="help-block">choose a cool username to identify your cheat sheets</p>
-                        {% if errors and errors.username %}<p>{{ errors.username }}</p>{% endif %}
+                        <p class="help-block">Choose a cool username to identify your cheat sheets</p>
+                        {% if errors and errors.username %}<span class="help-inline">{{ errors.username }}</span>{% endif %}
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="control-group {% if errors and errors.password %}error{% endif %}">
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
                         <input type="password" class="input-xlarge" id="password" name="password" value="{{ new_user.password }}">
                         <p class="help-block">put your password, dont put it in a cheat sheet!</p>
-                        {% if errors and errors.password %}<p>{{ errors.password }}</p>{% endif %}
+                        {% if errors and errors.password %}<span class="help-inline">{{ errors.password }}</span>{% endif %}
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="control-group {% if errors and errors.email %}error{% endif %}">
                     <label class="control-label" for="email">Email</label>
                     <div class="controls">
                         <input type="email" class="input-xlarge" id="email" name="email" value="{{ new_user.email }}">
                         <p class="help-block">Put your email, we use only in case you need to recover your password</p>
-                        {% if errors and errors.email %}<p>{{ errors.email }}</p>{% endif %}
+                        {% if errors and errors.email %}<span class="help-inline">{{ errors.email }}</span>{% endif %}
                     </div>
                 </div>
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary">Register</button>
-                    <button type="reset" class="btn">Cancel</button>
+                    <a href="{{ url_for('index') }}" class="btn">Cancel</a>
                 </div>
             </fieldset>
         </form>

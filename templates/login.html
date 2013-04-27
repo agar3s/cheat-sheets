@@ -6,27 +6,33 @@
 
     <h2>Login</h2>
     <div class="">
-        <form class="form-horizontal well">
+        <form class="form-horizontal well" method=POST>
             <fieldset>
                 <legend>Login to create private cheat sheets</legend>
+                {% if errors and errors.not_valid %}
+                <div class="control-group error">
+                    <span class="help-inline">{{ errors.not_valid }}</span>
+                </div>
+                {% endif %}
                 <div class="control-group">
                     <label class="control-label" for="username">Username</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="username" name="username">
+                        <input type="text" class="input-xlarge" id="username" name="username" value="{{ user.username }}">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
-                        <input type="password" class="input-xlarge" id="password" name="password">
+                        <input type="password" class="input-xlarge" id="password" name="password" value="{{ user.password }}">
                     </div>
                 </div>
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary">Login</button>
-                    <button type="reset" class="btn">Cancel</button>
+                    <a href="{{ url_for('index') }}" class="btn">Cancel</a>
                 </div>
             </fieldset>
         </form>
+        <a href="{{ url_for('register') }}" class="btn btn-info">Register</a>
     </div>
 
 {% endblock %}

@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% block description %}{% endblock %}"/>
-
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-responsive.min.css') }}">
@@ -50,9 +51,7 @@
       {% block content %}
       {% endblock %}
       <hr>
-      <footer>
-        {{ current_user.is_anonymous() }}
-
+      <footer class="row-fluid">
         Made by <a target="_blank" href="http://agares.co">Giovanny Beltran</a>. follow me <a href="http://twitter.com/agar3s">@agar3s</a>.<br/>
       </footer>
     </div>

@@ -14,7 +14,7 @@
   margin-right: 5px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 979px) {
   body {
     padding-top: 80px;
   }

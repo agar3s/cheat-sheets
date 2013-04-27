@@ -11,7 +11,7 @@
 
     <header class="jumbotron subhead">
         <h1>My Own Cheat Sheets</h1>
-        <div class="row">
+        <div class="row-fluid">
             <div class="span6">
                 <p class="lead">Create your own Cheat Sheets with all the information that you need</p>
             </div>
@@ -23,9 +23,8 @@
     <hr>
     <h2>Current cheat sheets</h2>
     {% for sheet in cheat_sheets %}
-
         <hr>
-        <h3><a href="{{ url_for('view_sheet', name=sheet.name ) }}">{{ sheet.name }}</a></h3>
+        <h3><a href="{{ url_for('view_sheet', owner=sheet.owner, name=sheet.name ) }}">{{ sheet.owner }}/{{ sheet.name }}</a></h3>
         <p>{{ sheet.description }}</p>
         <table class="table table-bordered table-striped table-hover">
         <thead>
