@@ -113,7 +113,14 @@ def register():
 @app.route('/')
 def index():
     query = {'public': {'$ne':False}} if current_user.is_anonymous() else { '$or': [{'owner':current_user.username},{'public': {'$ne':False}}] }
-    return render_template('index.html', cheat_sheets=db.sheets.find(query, sort=[("_id", -1)]))
+    query_sheets = db.sheets.find(query, sort=[("_id", -1)])
+    cheat_sheets = []
+    for sheet in list(query_sheets):
+        if not 'owner' in sheet:
+            sheet['owner'] = 'unknow'
+        cheat_sheets.append(sheet)
+
+    return render_template('index.html', cheat_sheets=cheat_sheets)
 
 
 @app.route('/new', methods=['POST', 'GET'])
@@ -143,7 +150,19 @@ def create_sheet():
 @app.route('/view/<owner>/<name>')
 def view_sheet(owner, name):
     sheet = db.sheets.find_one({'name':name, 'owner':owner})
-    if not sheet or (not sheet['public'] and current_user.username != owner):
+
+    if not sheet or ('public' in sheet and not sheet['public'] and current_user.username != owner):
+        #temporary old sheets migration
+        if owner == 'unknow':
+            sheet = db.sheets.find_one({'name':name, 'owner':{'$exists':False}})
+            if sheet:
+                if current_user.is_active():
+                    sheet['public'] = True
+                    sheet['owner'] = 'unknow'
+
+                return render_template('view.html', sheet = sheet)
+        #temporary ends
+
         return redirect(url_for('index'))
 
     return render_template('view.html', sheet = sheet)
@@ -153,16 +172,34 @@ def view_sheet(owner, name):
 @login_required
 def edit_sheet(owner, name):
     sheet = db.sheets.find_one({'name':name, 'owner':owner})
-    if not sheet or (not sheet['public'] and current_user.username != owner):
-        return redirect(url_for('index'))
+    if not sheet or ('public' in sheet and not sheet['public'] and current_user.username != owner):
+        #temporary old sheets migration
+        if owner == 'unknow':
+            sheet = db.sheets.find_one({'name':name, 'owner':{'$exists':False}})
+            if sheet:
+                if current_user.is_active():
+                    sheet['public'] = True
+                    sheet['owner'] = current_user.username
+
+            else:
+                return redirect(url_for('index'))
+        else:
+        #temporary ends
+            return redirect(url_for('index'))
 
     if request.method == 'POST':
         cheat_sheet_pre = request.form.to_dict()
         cheat_sheet = {}
-        cheat_sheet['name'] = name
+        #default inmutable values
+        cheat_sheet['name'] = sheet['name']
+        cheat_sheet['owner'] = sheet['owner']
+        cheat_sheet['public'] = sheet['public'] if 'public' in sheet else True
+
+        #changes
         cheat_sheet['description'] = cheat_sheet_pre['description']
-        cheat_sheet['public'] = 'public' in cheat_sheet_pre
-        
+
+        if current_user.username == sheet['owner']:
+            cheat_sheet['public'] = 'public' in cheat_sheet_pre
 
         index = 1
         variables = {}
@@ -172,10 +209,23 @@ def edit_sheet(owner, name):
         cheat_sheet['variables'] = variables
 
         db.sheets.update({'name':name, 'owner':owner}, cheat_sheet)
-        return redirect(url_for('view_sheet', name=name))
+
+        #temporary old sheet migration
+        if owner == 'unknow':
+            db.sheets.update({'name':name, 'owner':{'$exists':False}}, cheat_sheet)
+        #temporary ends
+
+        return redirect(url_for('view_sheet', owner=cheat_sheet['owner'], name=cheat_sheet['name']))
 
     return render_template('edit.html', sheet = sheet)
-    
+
+
+@app.route('/user/<owner>', methods=['GET'])
+def user(owner):
+    query = {'owner':owner} if current_user.is_active() and current_user.username == owner else {'owner':owner,'public': {'$ne':False}}
+    cheat_sheets = db.sheets.find(query,sort=[("_id", -1)])
+
+    return render_template('user.html',owner=owner, cheat_sheets=cheat_sheets)
 
 
 app.debug = True

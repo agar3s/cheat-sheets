@@ -11,7 +11,7 @@
     <h2>{{ sheet.name }}</h2>
     <div class="">
         <p>{{ sheet.description }}</p>
-        <p>{% if sheet.public %}Created by {{ sheet.owner }}{% else %}This is a private sheet{% endif %}</p>
+        <p>{% if sheet.public %}Created by <a href="{{ url_for('user', owner=sheet.owner) }}">{{ sheet.owner }}</a>{% else %}This is a private sheet{% endif %}</p>
         <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>

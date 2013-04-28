@@ -24,7 +24,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" style="padding: 0" href="{{ url_for('home') }}"><h1>CheatSheets</h1></a>
+          <a class="brand" style="padding: 0" href="{{ url_for('index') }}"><h1>CheatSheets</h1></a>
           <div class="nav-collapse collapse">
             {% if current_user.is_anonymous() %}
             <form class="navbar-form pull-right" action="{{ url_for('login') }}" method=POST>
@@ -36,7 +36,7 @@
             </form>
             {% else %}
             <ul class="nav pull-right">
-              <li><a href="#">My sheets</a></li>
+              <li><a href="{{ url_for('user', owner=current_user.username) }}">My sheets</a></li>
               <li><a href="#">settings</a></li>
               <li class="divider-vertical"></li>
               <li><a href="{{ url_for('logout') }}">logout</a></li>
